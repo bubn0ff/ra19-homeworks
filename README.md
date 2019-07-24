@@ -1,2 +1,5 @@
-# ra19-homeworks
-Assignments for the course "Library React: build your love for interactive web interfaces"
+# Домашние задания для курса Библиотека React
+
+## Блок 1. Компоненты
+1.1. [Компоненты](./components/)
+<!-- 1.2. [События и состояния](./state/) -->

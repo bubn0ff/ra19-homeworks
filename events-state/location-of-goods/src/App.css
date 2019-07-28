@@ -1,0 +1,139 @@
+.App {
+  text-align: center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  margin: 0 30px;
+  min-width: 550px;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Пользовательские настройки */
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.switcher {
+  text-align: right;
+  padding: 10px;
+}
+
+.switcher button {
+  background: none;
+  border: none;
+  outline:none;
+}
+
+.switcher i {
+  color: gray;
+  font-size: 30px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  margin: 2vw 4vw;
+  position: relative;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+
+.card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.card h1 {
+  padding-left: 3vw;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.card p {
+  padding-left: 10vw;
+  margin-top: 0;
+}
+
+.card-footer {
+  margin-top: 135px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #C10020;
+}
+
+.add-to-cart {
+  color: #C10020;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: none;
+  border: 1px solid #C10020;;
+  border-radius: 30px;
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.item {
+  height: 80px;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  background: #f4f4f4;
+  overflow: hidden;
+}
+
+.item img {
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.item h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.item span {
+  color: #C10020;
+}

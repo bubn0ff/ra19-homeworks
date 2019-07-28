@@ -14,7 +14,6 @@ export default class Portfolio extends Component {
     this.setState({
       selected: filter
     })
-    console.log(filter, this.state);
   };
 
   // применение фильтра
@@ -29,9 +28,21 @@ export default class Portfolio extends Component {
   render() {
     const {selected} = this.state;
 
-    const filters = ["All", "Websites", "Flayers", "Business Cards"];
+    return (
+      <div>
+        <Toolbar
+          filters={filters}
+          selected={selected}
+          onSelectFilter={this.changeState}/>
+          <ProjectList projects={this.applyFiltering(projects, selected)} />
+      </div>
+    );
+  };
+}
 
-    const projects = [
+const filters = ["All", "Websites", "Flayers", "Business Cards"];
+
+const projects = [
   {
   img: "https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/events-state/filter/img/mon.jpg",
   category: "Business Cards"
@@ -101,15 +112,3 @@ export default class Portfolio extends Component {
     category: "Flayers"
   }
 ];
-
-    return (
-      <div>
-        <Toolbar
-          filters={filters}
-          selected={selected}
-          onSelectFilter={this.changeState}/>
-          <ProjectList projects={this.applyFiltering(projects, selected)}/>
-      </div>
-    )
-  }
-}

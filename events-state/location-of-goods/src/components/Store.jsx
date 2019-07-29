@@ -10,9 +10,9 @@ export default class Store extends Component {
     icon: 'view_list' 
   }
 
-  onSwitch = () => {
-    this.state.icon === 'view_list' ? this.setState({icon: 'view_module'}) : this.setState({icon: 'view_list'});
-  }
+  onSwitch = () => this.setState((state) => ({
+    cardView: state.cardView === VIEW_LIST ? VIEW_MODULE : VIEW_LIST,
+  }));
 
   render() {
 
@@ -31,6 +31,9 @@ export default class Store extends Component {
     );
   };
 }
+
+const VIEW_LIST = "view_list";
+const VIEW_MODULE = "view_module";
 
 const products = [
   {

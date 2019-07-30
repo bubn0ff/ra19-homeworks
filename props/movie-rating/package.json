@@ -1,8 +1,10 @@
 {
-  "name": "ra19-homeworks",
-  "version": "1.0.0",
+  "name": "movie-rating",
+  "version": "0.1.0",
   "private": true,
+  "author": "Oleg Bubnov <bubnoff@ukr.net> (https://github.com/bubn0ff)",
   "dependencies": {
+    "nanoid": "^2.0.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
@@ -13,7 +15,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "author": "Oleg Bubnov <bubnoff@ukr.net> (https://github.com/bubn0ff)",
   "eslintConfig": {
     "extends": "react-app"
   },

@@ -9,7 +9,7 @@ export default function Stars(props) {
   let visible = true;
   
   // если рейтинг меньше 1 или больше 5, или вообще не число - компонент не отображается
-  if ((!Number(count) || count < 1 || count > 5)) {
+  if ((!Number.isInteger(count) || count < 1 || count > 5)) {
     visible = false;
   }
   

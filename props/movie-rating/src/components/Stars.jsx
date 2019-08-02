@@ -17,7 +17,7 @@ export default function Stars(props) {
     visible && 
     (
       <ul className="card-body-stars u-clearfix">
-        {[...Array(count)].map(n => (<Star key={n} />))}
+        {[...Array(count)].map((n, index) => (<Star key={index} />))}
       </ul>
     )
   );

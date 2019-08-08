@@ -1,6 +1,6 @@
 # Калькулятор вклада
 
-![Общий вид]()
+![Общий вид](https://github.com//bubn0ff/ra19-homeworks/master/forms/deposit-calc/src/deposit-calc.png)
 
 Процентная ставка высчитывается исходя из суммы и срока:
 

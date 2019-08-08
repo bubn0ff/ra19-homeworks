@@ -1,0 +1,43 @@
+.App {
+  text-align: center;
+}
+
+
+/* Пользовательские настройки */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 3px;
+  border: 2px solid #d9d9d9;
+  font-size: 16px;
+  font-family: "Sitka Small", sans-serif;
+  text-decoration: none;
+}
+
+.deposit {
+  display: flex;
+  flex-direction: column;
+}
+
+#input-sum, #input-months {
+  margin-bottom: 15px;
+  width: 10rem;
+  height: 2rem;
+  border-radius: 3px;
+  border: 1px solid #d9d9d9;
+  padding: 5px;
+  font-size: 14px;
+  font-family: "Sitka Small", sans-serif;
+}
+
+#input-sum:focus, #input-months:focus {
+  border: 1px double #33daff;
+}

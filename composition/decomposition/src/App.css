@@ -1,0 +1,137 @@
+.App {
+  text-align: center;
+}
+
+
+/* Пользовательские настройки */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin-bottom: 5px;
+}
+
+.container-first, .container-heap {
+  width: 835px;
+  margin-left: 200px;
+  padding: 10px;
+}
+
+.container-first-header span {
+  margin-left: 10px;
+}
+
+.container-search {
+  margin: 0 50px;
+}
+
+.container-search, .teaser, .home-tabs ul, .container-heap, .map ul, .header-news-tabs {
+  display: flex;
+  flex-direction: row;
+}
+
+.teaser ul {
+  font-size: 15px;
+}
+
+.visited, .map ul, .tv-program ul, .ether ul {
+  font-size: 13px;
+}
+
+.home-tabs, .home-promo {
+  margin: 5px auto;
+}
+
+.home-tabs ul, .services ul, .map ul, .tv-program ul, .ether ul, .header-news-tabs {
+  list-style-type: none;
+  text-align: left;
+}
+
+.home-promo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.home-promo-ad {
+  margin-top: 5px;
+}
+
+.home-input-btn {
+  width: 88px;
+  padding: 0.4rem 1.3rem;
+  border: 1px solid orange;
+  display: inline-block;
+  background-color: orange;
+  cursor: pointer;
+}
+
+.search-logo {
+  margin-right: 15px;
+}
+
+.input-search {
+  padding-left: 5px;
+  height: 36px;
+  border: 2px solid orange;
+}
+
+.container-search-main {
+  padding: 2px;
+}
+
+.teaser-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+.weather-content {
+  display: flex;
+}
+
+.heap {
+  width: 277px;
+}
+
+.weather-logo {
+  margin: 0;
+}
+
+.weather-temp, .weather-time {
+  margin-left: 1rem;
+  line-height: 45px;
+}
+
+.weather-temp {
+  text-align: center;
+  font-size: 30px;
+}
+
+.services,.tv-program {
+  margin-top: 20px;
+}
+
+img {
+  margin: 2px auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+li {
+  padding: 2px;
+}
+
+a {
+  margin-right: 12px;
+  text-decoration: none;
+}

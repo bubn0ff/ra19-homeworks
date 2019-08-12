@@ -7,6 +7,7 @@ import ListItem from './ListItem';
 import Image from './Image';
 import Input from './Input';
 
+/** Контейнер блока поиска */
 export default function ContainerSearch() {
   return (
     <Container className='container-search'>

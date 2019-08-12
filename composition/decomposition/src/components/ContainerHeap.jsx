@@ -7,7 +7,8 @@ import List from './List';
 import ListItem from './ListItem';
 import Image from './Image';
 
-export default function ContainerSearch() {
+/** Контейнер блока кучи всего - погоды, ТВ и пр. */
+export default function ContainerHeap() {
   return (
     <Container className='container-heap'>
       <Container className='heap heap-first'>

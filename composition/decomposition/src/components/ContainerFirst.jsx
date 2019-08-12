@@ -7,6 +7,7 @@ import List from './List';
 import ListItem from './ListItem';
 import Image from './Image';
 
+/** Контейнер блока новостей */
 export default function ContainerFirst() {
   return (
     <Container className='container-first'>

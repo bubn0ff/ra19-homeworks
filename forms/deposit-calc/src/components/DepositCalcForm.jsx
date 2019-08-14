@@ -1,12 +1,22 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import DisplayInfo from './DisplayInfo';
+import DepositDisplayInfo from './DepositDisplayInfo';
+import DepositForm from './DepositForm';
+import { CalcInterestRate } from '../components/CalcInterestRate';
+import { CalcTotalSum } from '../components/CalcTotalSum';
 
-export default class DepositCalc extends Component {
+export default class DepositCalcForm extends Component {
   state = {
     amount: '',
-    months: ''
+    months: '', 
+    interestRate: 1.5
   };
+  
+  componentDidUpdate(prevProps, prevState) {
+    if ((prevState.amount !== this.state.amount) || (prevState.months !== this.state.months)) {
+      this.setState({interestRate: CalcInterestRate(this.state.amount, this.state.months)});
+    }
+  }
 
   handleAmountChange = event => {
     this.setState({amount: event.target.value});
@@ -19,36 +29,24 @@ export default class DepositCalc extends Component {
   render() {
     return (
       <form className="main-container">
-        <div className="container">
-          <div className="deposit">
-            <label htmlFor="input-sum">Сумма</label> 
-            <input 
-              id="input-sum" 
-              type="text" 
-              name="sum" 
-              maxlength='12'
-              value={this.state.amount} 
-              onChange={this.handleAmountChange} 
-            />
-            
-            <label htmlFor="input-months">Срок (в месяцах)</label>
-            <input 
-              id="input-months" 
-              type="text" 
-              name="months" 
-              maxlength='5'
-              value={this.state.months} 
-              onChange={this.handleMonthsChange} 
-            />
-          </div>
-        </div>
-        <DisplayInfo months={this.state.months} amount={this.state.amount} />
+        <DepositForm 
+          className='deposit' 
+          amount={this.state.amount} 
+          months={this.state.months} 
+          handlerAmount={this.handleAmountChange} 
+          handlerMonths={this.handleMonthsChange}
+        />
+        <DepositDisplayInfo 
+          rate={this.state.interestRate}
+          funcSum={CalcTotalSum(this.state.amount, this.state.months, this.state.interestRate)}
+        />
       </form>
     );
   }
 }
 
-DepositCalc.propTypes = {
+DepositCalcForm.propTypes = {
   amount: PropTypes.string,
-  months: PropTypes.string
+  months: PropTypes.string, 
+  interestRate: PropTypes.string
 }

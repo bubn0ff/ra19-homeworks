@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import DepositDisplayInfo from './DepositDisplayInfo';
 import DepositForm from './DepositForm';
-import { CalcInterestRate } from '../components/CalcInterestRate';
-import { CalcTotalSum } from '../components/CalcTotalSum';
+import { CalcInterestRate } from '../js/CalcInterestRate';
+import { CalcTotalSum } from '../js/CalcTotalSum';
 
 export default class DepositCalcForm extends Component {
   state = {

@@ -1,0 +1,148 @@
+.App {
+  text-align: center;
+}
+
+
+/* Пользовательские настройки */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: "Sitka Small", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  margin: 10px;
+  padding: 5px;
+  width: 15rem;
+  height: 2.5rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+}
+
+input:focus {
+  border: 1px solid #ff9100;
+}
+
+.watches {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form-input-data {
+  width: 620px;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+}
+
+.submit {
+  width: 10rem;
+  height: 2.6rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  color: #000;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.city-and-X {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+.mark-delete {
+  cursor: pointer;
+}
+
+.clock-container {
+  width: 20rem;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid #d9d9d9;
+  border-radius: 4px;
+}
+
+.clock {
+  background: url(https://img.pngio.com/blank-analogue-clocks-blank-analogue-clocks-blank-clock-face-blank-clock-face-png-600_600.png);
+  background-size: contain;
+  background-repeat: none;
+  width: 15rem;
+  height: 15rem;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin: 1rem auto;
+  position: relative;
+}
+
+.hand-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.hour-face {
+  transform: translateY(-6px);
+}
+
+.min-face {
+  transform: translateY(-3px);
+}
+
+.second-face {
+  transform: translateY(-1.5px);
+}
+
+.hand {
+  width: 50%;
+  height: 5px;
+  top: 50%;
+  background: black;
+  position: absolute;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hour-hand {
+  height: 12px;
+  width: 25%;
+  left: 25%;
+}
+
+.min-hand {
+  width: 45%;
+  left: 5%;
+}
+
+.second-hand {
+  background: red;
+  height: 3px;
+}
+
+.watch-center-circle {
+  padding: 3%;
+  background: #fff;
+  position: absolute;
+  top: 47%;
+  left: 47%;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.watch-container {
+  margin: 1rem 4rem;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+/* Пользовательские настройки */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  max-width: 700px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #4e4f54;
+}
+
+textarea {
+  width: 30rem;
+  height: 5rem;
+  border: 1px solid #4e4f54;
+  border-radius: 3px;
+}
+
+textarea[placeholder] {
+  font-size: 14px;
+  padding: 5px;
+}
+
+
+/* КНОПКИ (начало) */
+
+.submit_btn, .refresh_btn {
+  width: 10rem;
+  height: 5rem;
+  margin-left: 0.5rem;
+  padding: 1rem;
+  color: rgb(209,209,217);
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-shadow: 0 -1px 2px rgba(0,0,0,.2);
+  outline: none;
+  border-radius: 3px;
+  background: linear-gradient(rgb(110,112,120), rgb(81,81,86)) rgb(110,112,120);
+  box-shadow:
+   0 1px rgba(255,255,255,.2) inset,
+   0 3px 5px rgba(0,1,6,.5),
+   0 0 1px 1px rgba(0,1,6,.2);
+  transition: .2s ease-in-out;
+}
+
+.submit_btn:hover:not(:active), .refresh_btn:hover:not(:active) {
+  background: linear-gradient(rgb(126,126,134), rgb(70,71,76)) rgb(126,126,134);
+}
+
+.submit_btn:active, .refresh_btn:active {
+  top: 1px;
+  background: linear-gradient(rgb(76,77,82), rgb(56,57,62)) rgb(76,77,82);
+  box-shadow:
+   0 0 1px rgba(0,0,0,.5) inset,
+   0 2px 3px rgba(0,0,0,.5) inset,
+   0 1px 1px rgba(255,255,255,.1);
+}
+
+/* КНОПКИ (конец) */
+
+
+.form-control {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-note-container {
+  display: flex;
+  flex-direction: column;
+  /* margin: 0.5rem 0.1rem; */
+}
+
+.note-container {
+  /* max-width: 680px; */
+  margin: 0.5rem auto;
+  font-size: 2rem;
+  text-shadow: 0 -1px 2px rgba(0,0,0,.2);
+  outline: none;
+  border-radius: 3px;
+  background: linear-gradient(rgb(110,112,120), rgb(81,81,86)) rgb(110,112,120);
+  box-shadow:
+   0 1px rgba(255,255,255,.2) inset,
+   0 3px 5px rgba(0,1,6,.5),
+   0 0 1px 1px rgba(0,1,6,.2);
+  transition: .2s ease-in-out;
+}
+
+.note-content {
+  color: #fff;
+  font-size: 15px;
+  padding: 1rem;
+  min-width: 10rem;
+  min-height: 10rem;
+  overflow-wrap: break-word;
+}
+
+.note-close {
+  float: right;
+  font-size: 12px;
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+}

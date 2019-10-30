@@ -12,4 +12,4 @@
 1. [Композиция компонентов](./composition/)
 2. [Жизненный цикл и работа с HTTP](./lifecycle-http/)
 3. [HOC](./hoc/)
-<!-- 4. [hooks, Context API](./hooks-context/) -->
+4. [hooks, Context API](./hooks-context/)

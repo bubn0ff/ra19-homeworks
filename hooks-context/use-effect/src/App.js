@@ -9,22 +9,17 @@ export default function App() {
 
   useEffect(() => {
     fetch(`${process.env.REACT_APP_USERS_URL}/users.json`)
-      .then(response => response.json())
-      .then(data => setUsers(data))
+    .then(response => response.json())
+    .then(data => setUsers(data))
   }, []);
 
   const handleClick = id => {
-    const user = users.find(user => user.id === id);
-    setSelectedUser({ id: user.id, name: user.name });
-    setUsers(prevUsers => prevUsers.map(user => {
-      user.active = user.id === id;
-      return user;
-    }))
+    setSelectedUser({ id });
   }
 
   return (
     <div className="App main-container">
-      <List users={users} onClick={handleClick} />
+      <List users={users} selected={selectedUser ? selectedUser.id : null} onClick={handleClick} />
       {selectedUser ? <Details info={selectedUser} /> : null}
     </div>
   );

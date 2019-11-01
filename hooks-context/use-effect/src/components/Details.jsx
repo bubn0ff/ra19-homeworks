@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import DetailsItem from './DetailsItem';
 
 export default function Details({ info }) {
   const [user, setUser] = useState([]);
@@ -16,7 +15,15 @@ export default function Details({ info }) {
 
   return (
     <div className="details">
-      {loading ? <p>Loading...</p> : <DetailsItem user={user} />}
+      {loading ? <p>Loading...</p> : 
+        <ul>
+          <li><img src={user.avatar} alt={"photo of " + user.name}></img></li>
+          <li className="details-user-name">{user.name}</li>
+          <li>city: {user.details.city}</li>
+          <li>company: {user.details.company}</li>
+          <li>position: {user.details.position}</li>
+        </ul>
+      }
     </div>
   );
 }

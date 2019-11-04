@@ -13,7 +13,7 @@
 2. [Жизненный цикл и работа с HTTP](./lifecycle-http/)
 3. [HOC](./hoc/)
 4. [hooks, Context API](./hooks-context/)
-<!-- 5. [React Router](./router/) -->
+5. [React Router](./router/)
 
 <!-- ## Блок 3. REDUX - управление состоянием
 

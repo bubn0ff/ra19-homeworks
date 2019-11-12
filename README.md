@@ -15,8 +15,8 @@
 4. [hooks, Context API](./hooks-context/)
 5. [React Router](./router/)
 
-<!-- ## Блок 3. REDUX - управление состоянием
+## Блок 3. REDUX - управление состоянием
 
-1. [Redux и Redux Thunk](.//)
-2. [Redux Observable](.//)
-3. [Redux Saga](.//) -->
+1. [Redux и Redux Thunk](./redux)
+<!-- 2. [Redux Observable](.//) -->
+<!-- 3. [Redux Saga](.//) -->

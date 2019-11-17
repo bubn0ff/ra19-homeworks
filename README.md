@@ -18,5 +18,5 @@
 ## Блок 3. REDUX - управление состоянием
 
 1. [Redux и Redux Thunk](./redux)
-<!-- 2. [Redux Observable](.//) -->
+2. [Redux Observable](./observable)
 <!-- 3. [Redux Saga](.//) -->

@@ -1,7 +1,7 @@
-# 3.1. Redux
+# 3.2. Redux Observable
 
-1. [Редактирование](editing)
-2. [Медленное и глючное API](api)
-<!-- 3. [Authentication](authentication) -->
+1. [Поиск](search)
+2. [Список и подробности](main-details)
+<!-- 3. [Лента новостей](newsfeed) -->
 
 Работы должны соответствовать принятому [стилю оформления кода](https://github.com/netology-code/codestyle).

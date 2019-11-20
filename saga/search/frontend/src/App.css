@@ -1,0 +1,36 @@
+.App {
+  text-align: left;
+}
+
+/* Пользовательские настройки */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sitka Small", sans-serif;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+input {
+  margin: 15px;
+  padding-left: 3px;
+}
+
+ul,
+.status {
+  margin-left: 15px;
+}
+
+.status {
+  color: red;
+  font-size: 11px;
+  margin-bottom: 15px;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 7px;
+  color: blueviolet;
+}

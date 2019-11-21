@@ -1,0 +1,88 @@
+.App {
+  text-align: left;
+  margin: 20px;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Пользовательские настройки */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sitka Small", sans-serif;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+button,
+.card-data:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+button {
+  font-family: "Sitka Small", sans-serif;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.card {
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 3px;
+  border: 2px solid #d9d9d9;
+}
+
+.card-data {
+  color: blueviolet;
+}
+
+.status {
+  color: red;
+  font-size: 11px;
+  margin-bottom: 15px;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 7px;
+  color: blueviolet;
+}
+
+a:hover,
+span:hover {
+  color: orangered;
+}
+
+.not-found {
+  margin-bottom: 20px;
+}

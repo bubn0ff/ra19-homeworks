@@ -20,3 +20,10 @@
 1. [Redux и Redux Thunk](./redux)
 2. [Redux Observable](./observable)
 3. [Redux Saga](./saga)
+
+## Дополнительно:
+
+[Другие задания](./other-tasks)
+
+
+Работы должны соответствовать принятому [стилю оформления кода](https://github.com/netology-code/codestyle).
